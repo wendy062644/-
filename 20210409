@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c,num1[1000],num2[1000];
+cin>>a>>b>>c;
+	int a1=0,b1=0;
+	for(int m=0;1000>m;m++)
+	{
+		if(m%3==1){a1=a;}
+		if(m%3==2){
+		if(a1>=b){a1=a1-b+b1;b1=b;}
+		else{a1=a1-b+b1;if(a1>0){b1=b;}else{b1=b1+a1;}}
+		if(m%3==0){b1=0;}
+		if(a1<0){a1=0;}
+		}
+		cout<<m%3<<" "<<a1<<" "<<b1<<endl;
+		num1[m]=a1;num2[m]=b1;
+		if(a1==c){
+		cout<<"(0,0)";
+		for(int n=1;m>n;n++)
+		{
+			cout<<"->("<<num1[n]<<","<<num2[n]<<")";
+		}
+		break;}
+		else{if(a1==num1[1]&&m>1){cout<<"NO"<<endl;break;}} 
+	}
+} 
