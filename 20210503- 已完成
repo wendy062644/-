@@ -5,8 +5,7 @@ using namespace std;
 #define pi 3.14159265
 int main()
 {
-	int l,a,b;
-	double sina,sinb,sinc;
+	double l,a,b,sina,sinb,sinc;
 	cin>>l>>a>>b;
 	sina=a*pi/180;
 	sinb=b*pi/180;
@@ -15,7 +14,7 @@ int main()
 	sinb=sin(sinb);
 	sinc=sin(sinc);
 	cout<<fixed<<setprecision(2)<<l*sina*sinb/sinc;
- } 
+ }
  
  題目:http://www.tcgs.tc.edu.tw:1218/ShowProblem?problemid=d067
  d067. 5.三角測量定位
