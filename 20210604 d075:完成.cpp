@@ -55,5 +55,6 @@ int main() {
 	}
 }  
 
+備註: DFS演算法(爆搜)
 題目: http://www.tcgs.tc.edu.tw:1218/ShowProblem?problemid=d075
 d075: 2.同字母字串列最寬排版(105年台中區複賽)
